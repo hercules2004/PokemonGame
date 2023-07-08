@@ -1,7 +1,7 @@
 const canvas= document.querySelector('canvas');
 
-canvas.width=window.innerWidth;
-canvas.height=window.innerHeight;
+canvas.width=1440;
+canvas.height=749;
 
 const c=canvas.getContext('2d');
 
@@ -89,11 +89,11 @@ playerLeftimage.src='./Images/playerLeft.png';
 const playerRightimage=new Image();
 playerRightimage.src='./Images/playerRight.png';
 
-console.log(canvas.width);
-console.log(canvas.height);
+console.log(window.innerHeight);
+console.log(window.innerWidth);
 const player=new positioning({
     position: {
-        x: canvas.width*0.34,
+        x: canvas.width*0.34375,
         y: canvas.height*0.3464
     },
     image: playerDownimage,
