@@ -89,11 +89,12 @@ playerLeftimage.src='./Images/playerLeft.png';
 const playerRightimage=new Image();
 playerRightimage.src='./Images/playerRight.png';
 
-
+console.log(canvas.width);
+console.log(canvas.height);
 const player=new positioning({
     position: {
-        x: canvas.width/2 -225,
-        y: canvas.height/2-115
+        x: canvas.width*0.34,
+        y: canvas.height*0.3464
     },
     image: playerDownimage,
     frames:4,
